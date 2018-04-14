@@ -1,0 +1,70 @@
+.navbar-inverse {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+	color: #fff;
+	background-color: transparent;
+}
+
+// positioning navbar text 
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+
+// make the navbar text on the right side and a transparent background
+.navbar .navbar-collapse {
+	text-align: right;
+	background-color: transparent;
+}
+
+
+//BM logo should be gone in tablet mode
+.navbar-brand {
+	display: none;
+}
+
+
+
+//boarder to content styling
+.container {
+	width: 95%;
+	margin-bottom: 30px;
+	margin-top: -30px;
+
+    background-color: $bmbackgroundColor;
+	opacity: 0.9;
+	border-radius: 5px;
+	border: 0.7px inset #382660;
+	-webkit-box-shadow: -1px 4px 34px 0px rgba(56, 38, 96, 1);
+	-moz-box-shadow: -1px 4px 34px 0px rgba(56, 38, 96, 1);
+	box-shadow: -1px 4px 34px 0px rgba(56, 38, 96, 1);
+	
+	.food-menu{
+		
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		
+		hr{
+		display:block;
+	}
+	}
+	
+
+}
+
+//navbar text hover and  active
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+
+width: 100%;
+}
+
+

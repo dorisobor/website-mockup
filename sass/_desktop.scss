@@ -1,0 +1,16 @@
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+	border-style: none;
+	border-bottom-color: none;
+}
+
+//BM logo should be gone in desktop mode
+
+.navbar-brand {
+	display: none;
+}
+
+hr{
+	display: block;
+}
+

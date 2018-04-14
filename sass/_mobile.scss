@@ -1,0 +1,98 @@
+//navbar for mobile
+//hamburgar style
+.navbar-inverse .navbar-toggle .icon-bar {
+
+	background-color: #f7f7f7;
+	box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px $logocolorFirst, 0 0 30px #46c3fd, 0 0 40px #46c3fd, 0 0 55px #46c3fd, 0 0 75px #46c3fd;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+	border-bottom-color: $logocolorSecond;
+}
+
+// make the mobile navbar appear on top of the header
+.navbar .navbar-collapse {
+	text-align: center;
+	position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color:$bmbackgroundColor;
+	
+}
+
+.navbar-collapse{
+	
+	opacity: 0.9;
+}
+
+//navbar text
+.navbar-inverse .navbar-nav > li > a {
+	color: $logocolorFirst;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px $logocolorFirst, 0 0 30px #46c3fd, 0 0 40px #46c3fd, 0 0 55px #46c3fd, 0 0 75px #46c3fd;
+	font-family: 'Raleway', sans-serif;
+	   
+
+
+}
+
+//navbar text hover and  active
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+	
+	color: #fff;
+	//text-decoration: underline;
+	background-color: #080808;
+	font-family: 'Raleway', sans-serif;
+	width: 100%;
+
+}
+
+
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
+}
+
+// logo mobile other pages
+.navbar-inverse .navbar-brand {
+
+	font-family: neonclub;
+	color: #f7f7f7;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px $logocolorSecond, 0 0 30px $logocolorSecond, 0 0 40px $logocolorSecond, 0 0 55px $logocolorSecond, 0 0 75px $logocolorSecond;
+	font-size: 2em;
+
+
+
+}
+
+//BM logo should be visible on mobile mode
+		.navbar-brand {
+			display: block;
+		}
+
+
+//boarder to content styling
+
+.container{
+	background-color: transparent;
+	border-radius: none;
+	border:none;
+	box-shadow: none;
+	h2 {
+		
+		padding:20px;
+	}
+	.food-menu{
+		
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+}
+
+hr{
+		display:none;
+	}
+

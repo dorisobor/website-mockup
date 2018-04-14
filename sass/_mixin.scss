@@ -1,0 +1,23 @@
+//colors
+
+$logocolorFirst: #06fcee;
+$logocolorSecond: #ff04d9;
+$bmbackgroundColor: #0a0233;
+$defaultColor: #f7f7f7;
+
+//fonts
+$defaultText: Calibri, sans-serif;
+
+@mixin padding  {
+    
+ margin: 0px;
+    padding: 0px;
+}
+
+
+//font
+@font-face {
+   font-family:neonclub;
+   src: url("../fonts/NEON CLUB MUSIC/NEON CLUB MUSIC.otf")  format("opentype");
+   
+}

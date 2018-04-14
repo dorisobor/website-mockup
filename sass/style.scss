@@ -1,0 +1,270 @@
+@import "_mixin.scss";
+@import "_mobile.scss";
+@import "_tablet.scss";
+@import "_desktop.scss";
+
+
+
+
+
+
+body {
+	@include padding;
+
+
+	.wrapper {
+		margin: auto;
+
+		width: 95%;
+
+		border: 0.5px solid $defaultColor;
+		-webkit-box-shadow: -1px 4px 34px 0px rgba(0, 0, 0, 0.74);
+		-moz-box-shadow: -1px 4px 34px 0px rgba(0, 0, 0, 0.74);
+		box-shadow: -1px 4px 34px 0px rgba(0, 0, 0, 0.74);
+
+
+
+
+		header {
+			margin: 50px; //logo styling
+			text-align: center;
+			font-family: neonclub;
+			.headline-home {
+				margin: 10px;
+				font-size: 2em;
+				text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px $logocolorFirst, 0 0 30px $logocolorFirst, 0 0 40px $logocolorFirst, 0 0 55px $logocolorFirst, 0 0 75px $logocolorFirst;
+				color: $logocolorFirst;
+			}
+			.headline {
+				padding: 2px;
+				margin: 2px;
+				font-size: 3em;
+				text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px $logocolorFirst, 0 0 30px $logocolorFirst, 0 0 40px $logocolorFirst, 0 0 55px $logocolorFirst, 0 0 75px $logocolorFirst;
+				color: $logocolorFirst;
+				top: -105px;
+				position: relative;
+				text-align: left;
+				width: 460px;
+			}
+			.large-headline {
+				font-size: 10em;
+				color: #f7f7f7;
+				text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px $logocolorFirst, 0 0 30px #46c3fd, 0 0 40px #46c3fd, 0 0 55px #46c3fd, 0 0 75px #46c3fd;
+			}
+
+			span {
+				color: #f7f7f7;
+				text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px $logocolorSecond, 0 0 30px $logocolorSecond, 0 0 40px $logocolorSecond, 0 0 55px $logocolorSecond, 0 0 75px $logocolorSecond;
+			}
+
+			.subtitle {
+				font-family: $defaultText;
+				font-weight: lighter;
+				font-size: 1.5em;
+				color: $defaultColor;
+				text-shadow: 2px 2px 4px #000000;
+
+			}
+		}
+		main {
+			// container style
+			margin: auto;
+			h1 {
+
+				font-family: 'Raleway', sans-serif;
+				text-shadow: 2px 2px 4px #000000;
+				color: #fffea5;
+				top: -40px;
+				position: relative;
+				text-align: center;
+
+
+
+			}
+
+
+			.content {
+				text-align: center;
+				color: $defaultColor;
+				font-family: $defaultText;
+				font-weight: lighter;
+				margin: 20px;
+				padding: 10px;
+
+
+				.opening-hours,
+				.contact,
+				.map {
+					padding: 5px;
+					margin: auto; //social media icons
+					.social-media {
+						margin: 5px;
+						padding: 5px;
+						font-size: 2.5em;
+						i {
+							padding: 5px;
+						}
+					}
+				}
+				
+				
+
+					
+					
+					//food menu options
+				.starter,
+				.main-courses,
+				.desserts {
+
+					margin:0px 15px 15px;
+				
+
+				}
+
+				h2 {
+					font-family: $defaultText;
+					font-weight: bold;
+				}
+				
+				h2 {
+					font-family: $defaultText;
+					font-weight: bold;
+				}
+				h4 {
+					font-family: $defaultText;
+					font-weight: bold;
+
+				} // map image
+				img {
+					width: 100%;
+					height: auto;
+
+				}
+			}
+
+
+		}
+	} 
+	
+	// footer styling
+	footer {
+		text-align: center;
+		color: $defaultColor;
+		margin: 40px;
+		padding: 40px;
+		
+		
+	}
+
+}
+
+
+
+
+//mobile screen
+@media screen and (max-width: 768px) {
+	body {
+		@import "_mobile.scss";
+
+		background-color: $bmbackgroundColor;
+		background-image: url(../images/bakgrund-mobile.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 70vh;
+		// navbar styling
+		
+		
+		.navbar {
+
+			background-color: $bmbackgroundColor;
+			background-repeat: no-repeat;
+			
+			// active background styling
+			ul {
+	
+	width: 100%;
+	
+}
+
+		}
+		
+	
+
+
+		.wrapper {
+			border-style: none;
+			border-color: transparent;
+			box-shadow: none;
+			h1 {
+
+				display: none;
+			}
+			.headline {
+
+				display: none;
+			}
+			.content {
+				.about-us {
+
+					display: flex;
+					flex-direction: column; //Quote
+				}
+			}
+		}
+
+
+
+	}
+}
+
+
+//tablet screen
+@media screen and (max-width: 1028px) {
+	@import "_tablet.scss";
+	body {
+		background-image: url(../images/Bakgrund%20Tablet.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		.navbar-inverse .navbar-collapse,
+
+		.navbar-inverse .navbar-form {
+			border-color: transparent;
+
+		}
+		
+	
+		.about-us {
+			display: flex;
+			flex-direction: row-reverse;
+
+
+		}
+
+
+
+
+
+	}
+}
+
+
+//desktop screen
+@media screen and (min-width: 1028px) {
+	@import "_desktop.scss";
+	body {
+		background-image: url(../images/Bakgrund%20Desktop.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		.about-us {
+			display: flex;
+			flex-direction: row;
+
+		}
+
+
+
+
+	}
+}
