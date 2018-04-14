@@ -8,4 +8,4 @@ A group assignment we did in class were each person had to do a prototype based 
  - Sass
  
  The website is responsive and can be visited here:
-(https://dorisobor.github.io/website-mockup/)
+https://dorisobor.github.io/website-mockup/
